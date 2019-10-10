@@ -4,7 +4,7 @@ public class AddingMachine {
 	
 	private int total;
 	private String operations; // record the observations/operations implemented
-	// not needed - included for clarity
+	
 	public AddingMachine () // initializing method
 	{
 		total = 0;
