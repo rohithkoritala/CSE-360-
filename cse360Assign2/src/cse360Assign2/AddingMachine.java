@@ -3,32 +3,32 @@ package cse360Assign2;
 public class AddingMachine {
 	
 	private int total;
-	private String operations;
+	private String operations; // record the observations/operations implemented
 	// not needed - included for clarity
-	public AddingMachine () 
+	public AddingMachine () // initializing method
 	{
 		total = 0;
 		operations = "0";
 	}
-	public int getTotal () 
+	public int getTotal () // returns total
 	{
 		return total;
 	}
-	public void add (int value) 
+	public void add (int value) // adds the parameter to the total
 	{
 		total += value;
 		operations = operations + " + " + value;
 	}
-	public void subtract (int value) 
+	public void subtract (int value) // subtracts the parameter from the total
 	{
 		total -= value;
 		operations = operations + " - " + value;
 	}
-	public String toString () 
+	public String toString () // returns the string with all the operations
 	{
 		return operations;
 	}
-	public void clear() 
+	public void clear() // resets the variables
 	{
 		total = 0 ;
 		operations = " 0 ";
